@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CreateFlashcardActivity">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/subjectEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleEditText"
+        android:hint="Subject"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectEditText"
+        android:hint="Description"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/languagesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEditText"
+        android:hint="Languages"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/frontEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/languagesEditText"
+        android:hint="Front (term)"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/backEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frontEditText"
+        android:hint="Back (definition)"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/hintEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backEditText"
+        android:hint="Hint (3rd side)"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+</RelativeLayout>
